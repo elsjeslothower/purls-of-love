@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { site } from "@/content/site";
+import { basePath } from "@/lib/basePath";
 import { MenuIcon, CloseIcon } from "./icons";
 
 export default function Nav() {
@@ -10,14 +11,14 @@ export default function Nav() {
   return (
     <header className="animate-fade-in-down sticky top-0 z-50 border-b border-border/80 bg-background/90 backdrop-blur">
       <nav className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
-        <a href="/" className="font-display text-lg font-semibold tracking-tight text-clay">
+        <a href={`${basePath}/`} className="font-display text-lg font-semibold tracking-tight text-clay">
           {site.orgName}
         </a>
         <div className="flex items-center gap-2 sm:gap-6">
           <ul className="hidden gap-6 text-sm text-foreground-muted sm:flex">
             {site.nav.links.map((link) => (
               <li key={link.href}>
-                <a href={link.href} className="transition-colors hover:text-clay">
+                <a href={`${basePath}${link.href}`} className="transition-colors hover:text-clay">
                   {link.label}
                 </a>
               </li>
@@ -40,7 +41,7 @@ export default function Nav() {
           {site.nav.links.map((link) => (
             <li key={link.href}>
               <a
-                href={link.href}
+                href={`${basePath}${link.href}`}
                 onClick={() => setMenuOpen(false)}
                 className="block rounded-lg px-2 py-2 transition-colors hover:bg-surface hover:text-clay"
               >

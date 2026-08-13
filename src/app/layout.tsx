@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Fraunces } from "next/font/google";
 import { site } from "@/content/site";
+import { basePath } from "@/lib/basePath";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -34,7 +35,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   icons: {
-    icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
+    icon: [{ url: `${basePath}/favicon.svg`, type: "image/svg+xml" }],
   },
 };
 

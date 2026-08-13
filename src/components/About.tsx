@@ -1,4 +1,5 @@
 import { site } from "@/content/site";
+import { basePath } from "@/lib/basePath";
 
 export default function About() {
   const t = site.about;
@@ -26,7 +27,7 @@ export default function About() {
           <div className="overflow-hidden rounded-3xl border border-border bg-surface shadow-sm">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src={t.photo}
+              src={`${basePath}${t.photo}`}
               alt={t.photoAlt}
               className="aspect-[4/5] w-full object-cover"
             />
