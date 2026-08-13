@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+:root {
+  --color-cream: #f7efe4;
+  --color-linen: #fffaf3;
+  --color-espresso: #3a2a20;
+  --color-espresso-soft: #6b5648;
+  --color-latte-border: #e8dcc8;
+
+  --color-terracotta: #c1652f;
+  --color-sage: #6f8360;
+  --color-clay: #a8492f;
+  --color-honey: #c98a2c;
+
+  --background: var(--color-cream);
+  --surface: var(--color-linen);
+  --foreground: var(--color-espresso);
+  --foreground-muted: var(--color-espresso-soft);
+  --border-color: var(--color-latte-border);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-foreground: var(--foreground);
+  --color-foreground-muted: var(--foreground-muted);
+  --color-border: var(--border-color);
+
+  --color-terracotta: var(--color-terracotta);
+  --color-sage: var(--color-sage);
+  --color-clay: var(--color-clay);
+  --color-honey: var(--color-honey);
+
+  --font-sans: var(--font-geist-sans);
+  --font-display: var(--font-fraunces);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+*,
+*::before,
+*::after {
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease,
+    fill 0.3s ease, stroke 0.3s ease;
+}
+
+::selection {
+  background: var(--color-honey);
+  color: var(--color-espresso);
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in-down {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes stitch-in {
+  from {
+    opacity: 0;
+    transform: scale(0.92) rotate(-2deg);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.animate-fade-in-down {
+  animation: fade-in-down 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.animate-stitch-in {
+  animation: stitch-in 1s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-in-up,
+  .animate-fade-in-down,
+  .animate-stitch-in {
+    animation: none;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition: none;
+  }
+}

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500">
+  <rect width="400" height="500" fill="#fffaf3" />
+  <rect x="1" y="1" width="398" height="498" fill="none" stroke="#e8dcc8" stroke-width="2" />
+
+  <circle cx="200" cy="195" r="70" fill="#e8dcc8" />
+  <circle cx="200" cy="175" r="42" fill="#c98a2c" opacity="0.35" />
+  <path
+    d="M110 340c10-55 45-85 90-85s80 30 90 85v40H110z"
+    fill="#c98a2c"
+    opacity="0.35"
+  />
+
+  <g fill="none" stroke="#c1652f" stroke-width="2.5" stroke-linecap="round">
+    <path d="M150 250c15 8 15 24 0 32M170 232c8 15 24 15 32 0M250 250c-15 8-15 24 0 32M170 300c8-15 24-15 32 0" />
+  </g>
+
+  <text
+    x="200"
+    y="440"
+    text-anchor="middle"
+    font-family="Georgia, serif"
+    font-size="16"
+    fill="#6b5648"
+  >
+    Photo placeholder — swap in
+  </text>
+  <text
+    x="200"
+    y="462"
+    text-anchor="middle"
+    font-family="Georgia, serif"
+    font-size="16"
+    fill="#6b5648"
+  >
+    public/about/founder.jpg
+  </text>
+</svg>
