@@ -14,5 +14,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/patterns/`,
       lastModified: new Date(),
     },
+    {
+      url: `${baseUrl}/donate/`,
+      lastModified: new Date(),
+    },
   ];
 }
