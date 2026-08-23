@@ -2,10 +2,9 @@ import type { Metadata } from "next";
 import Nav from "@/components/Nav";
 import Donate from "@/components/Donate";
 import Footer from "@/components/Footer";
-import { site } from "@/content/site";
 
 export const metadata: Metadata = {
-  title: `Donate — ${site.orgName}`,
+  title: "Donate — Purls of Love",
   description: "Support Purls of Love's volunteer knitters and crocheters with a donation on Venmo.",
   alternates: {
     canonical: "/donate",

@@ -1,7 +1,50 @@
-import { site } from "@/content/site";
+const patterns = {
+  eyebrow: "Patterns",
+  heading: "Free patterns for our volunteer makers.",
+  intro:
+    "Every pattern below has been tested by our community and approved for donation projects. Beginner-friendly options are marked, so new volunteers always have a place to start.",
+  items: [
+    {
+      title: "Comfort Blanket (Preemie size)",
+      level: "Beginner",
+      description: "A simple garter-stitch blanket sized for NICU bassinets.",
+      format: "PDF · knit or crochet",
+    },
+    {
+      title: "Every-Season Beanie",
+      level: "Beginner",
+      description: "A stretchy ribbed hat that works for kids and adults alike.",
+      format: "PDF · knit",
+    },
+    {
+      title: "Lap Blanket for Care Homes",
+      level: "Intermediate",
+      description: "A cozy textured throw sized for wheelchairs and recliners.",
+      format: "PDF · crochet",
+    },
+    {
+      title: "Quick Scarf",
+      level: "Beginner",
+      description: "A one-skein scarf that knits up in a weekend.",
+      format: "PDF · knit or crochet",
+    },
+    {
+      title: "Granny Square Blanket",
+      level: "Intermediate",
+      description: "Our most-donated pattern — modular, portable, and endlessly customizable.",
+      format: "PDF · crochet",
+    },
+    {
+      title: "Fingerless Mitts",
+      level: "Beginner",
+      description: "Quick handwarmers for shelter and outreach donations.",
+      format: "PDF · knit",
+    },
+  ],
+};
 
 export default function Patterns() {
-  const t = site.patterns;
+  const t = patterns;
 
   return (
     <section className="mx-auto max-w-5xl px-6 py-20">

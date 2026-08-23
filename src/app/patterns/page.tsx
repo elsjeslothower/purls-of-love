@@ -2,10 +2,11 @@ import type { Metadata } from "next";
 import Nav from "@/components/Nav";
 import Patterns from "@/components/Patterns";
 import Footer from "@/components/Footer";
-import { site } from "@/content/site";
+
+const orgName = "Purls of Love";
 
 export const metadata: Metadata = {
-  title: `Patterns — ${site.orgName}`,
+  title: `Patterns — ${orgName}`,
   description: "Free, volunteer-tested knit and crochet patterns for Purls of Love donation projects.",
   alternates: {
     canonical: "/patterns",

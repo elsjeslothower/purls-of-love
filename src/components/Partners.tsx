@@ -1,7 +1,44 @@
-import { site } from "@/content/site";
+const partners = {
+  eyebrow: "Partners",
+  heading: "Organizations we work alongside.",
+  paragraph:
+    "We partner with hospitals, shelters, and community groups to make sure every handmade piece reaches someone who needs it.",
+  items: [
+    {
+      name: "Riverbend Children's Hospital",
+      blurb: "NICU hats and preemie blankets delivered monthly to new families.",
+      href: "https://example.org",
+    },
+    {
+      name: "Harborlight Family Shelter",
+      blurb: "Seasonal blanket and scarf drives for families in transitional housing.",
+      href: "https://example.org",
+    },
+    {
+      name: "Maplewood Senior Center",
+      blurb: "Lap blankets and companionship visits for long-term residents.",
+      href: "https://example.org",
+    },
+    {
+      name: "Stitches for Veterans",
+      blurb: "Warm accessories distributed through regional VA outreach events.",
+      href: "https://example.org",
+    },
+    {
+      name: "Willow Creek Women's Shelter",
+      blurb: "Care packages with handmade wearables for residents rebuilding their lives.",
+      href: "https://example.org",
+    },
+    {
+      name: "Foothill Community Fridge Network",
+      blurb: "Weatherproof accessories distributed alongside food resources.",
+      href: "https://example.org",
+    },
+  ],
+};
 
 export default function Partners() {
-  const t = site.partners;
+  const t = partners;
 
   return (
     <section id="partners" className="border-y border-border bg-surface">

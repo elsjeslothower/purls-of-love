@@ -1,5 +1,15 @@
-import { site } from "@/content/site";
 import { InstagramIcon } from "./icons";
+
+const orgName = "Purls of Love";
+
+const gallery = {
+  eyebrow: "Gallery",
+  heading: "Fresh off the needles.",
+  paragraph:
+    "We post finished pieces, drop-off days, and behind-the-scenes stitching straight from our Instagram.",
+  instagramHandle: "purlsoflove",
+  instagramUrl: "https://www.instagram.com/purlsoflove/",
+};
 
 // SnapWidget (https://snapwidget.com) pulls the live public feed client-side —
 // no API tokens or Meta developer app required. But it does require creating a
@@ -9,7 +19,7 @@ import { InstagramIcon } from "./icons";
 const SNAPWIDGET_ID = "";
 
 export default function Gallery() {
-  const t = site.gallery;
+  const t = gallery;
 
   return (
     <section id="gallery" className="mx-auto max-w-5xl px-6 py-20">
@@ -39,7 +49,7 @@ export default function Gallery() {
             className="snapwidget-widget h-[520px] w-full border-0"
             allowTransparency
             scrolling="no"
-            title={`${site.orgName} Instagram feed`}
+            title={`${orgName} Instagram feed`}
             loading="lazy"
           />
         ) : (

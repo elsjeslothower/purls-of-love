@@ -1,8 +1,23 @@
-import { site } from "@/content/site";
 import { basePath } from "@/lib/basePath";
 
+const about = {
+  eyebrow: "About Us",
+  heading: "Every stitch is a small act of care.",
+  paragraphs: [
+    "Purls of Love started with a single skein of yarn and a simple idea: handmade things carry a warmth that store-bought ones can't. Today we're a community of volunteer knitters and crocheters who make blankets, hats, and blankets for people going through hard seasons — new babies in the NICU, families in shelters, seniors in care homes, and anyone who could use a reminder that someone out there is thinking of them.",
+    "We're entirely volunteer-run and donation-funded. Every pattern we share, every partnership we build, and every finished piece we deliver is powered by people who believe that kindness, made by hand, still matters.",
+  ],
+  founderName: "Sara Keck",
+  founderRole: "Knitter. Crocheter. Founder.",
+  founderQuote:
+    "“The goal of Purls of Love is to bring warmth and love to individuals in need of support.”",
+  // TODO: replace with a real photo (e.g. /about/founder.jpg) and update this path.
+  photo: "/about/founder.svg",
+  photoAlt: "Sara Keck, founder of Purls of Love",
+};
+
 export default function About() {
-  const t = site.about;
+  const t = about;
 
   return (
     <section id="about" className="relative overflow-hidden">
