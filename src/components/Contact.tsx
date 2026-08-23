@@ -1,10 +1,28 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
-import { site } from "@/content/site";
+
+const contact = {
+  eyebrow: "Contact",
+  heading: "Get in touch.",
+  tagline: "Questions about volunteering, donating yarn, or partnering with us? We'd love to hear from you.",
+  email: "purlsoflovebysara@gmail.com",
+  presetSubject: "You have a message from the website about {}",
+  reasonLabel: "I'm reaching out about",
+  reasons: [
+    { value: "volunteering", label: "Volunteering" },
+    { value: "donating materials", label: "Donating materials" },
+    { value: "partnering", label: "Partnering" },
+    { value: "other", label: "Other" },
+  ],
+  otherPlaceholder: "Tell us in a few words",
+  messageLabel: "Message",
+  submitLabel: "Send",
+  helperText: "This opens your email app with the message filled in, addressed to the founder.",
+};
 
 export default function Contact() {
-  const t = site.contact;
+  const t = contact;
   const [reason, setReason] = useState<string>(t.reasons[0].value);
 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {

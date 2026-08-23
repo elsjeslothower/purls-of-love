@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Fraunces } from "next/font/google";
-import { site } from "@/content/site";
 import { basePath } from "@/lib/basePath";
 import "./globals.css";
+
+const orgName = "Purls of Love";
+const description =
+  "Purls of Love is a volunteer-run nonprofit connecting knitters and crocheters with people who need a little extra warmth and comfort.";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,16 +25,16 @@ const fraunces = Fraunces({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://purlsoflove.org"),
-  title: site.orgName,
-  description: site.description,
+  title: orgName,
+  description,
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: site.orgName,
-    description: site.description,
+    title: orgName,
+    description,
     url: "https://purlsoflove.org",
-    siteName: site.orgName,
+    siteName: orgName,
     type: "website",
   },
   icons: {

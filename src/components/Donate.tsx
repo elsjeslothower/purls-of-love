@@ -1,7 +1,24 @@
-import { site } from "@/content/site";
+const donate = {
+  eyebrow: "Donate",
+  heading: "Provide support.",
+  intro:
+    "Purls of Love runs entirely on donated materials and volunteer time. Every dollar goes straight toward yarn, needles, and hooks for our next project — no overhead, no middleman.",
+  // TODO: replace with the real Venmo profile link, e.g. "https://venmo.com/u/YourHandle"
+  venmoUrl: "https://venmo.com/u/YOUR_VENMO_HANDLE",
+  ctaLabel: "Give on Venmo",
+  suggestedAmounts: [
+    { amount: "$5", description: "A new pattern to knit or crochet" },
+    { amount: "$15", description: "A skein of soft, washable yarn" },
+    { amount: "$20", description: "2 skeins for a preemie blanket" },
+    { amount: "$35", description: "A set of needles or hooks for a new volunteer" },
+    { amount: "$50", description: "Materials for a shawl" },
+    { amount: "$75", description: "Materials for a full lap blanket" },
+  ],
+  helperText: "Every suggested amount below links to the same Venmo profile — give whatever feels right.",
+};
 
 export default function Donate() {
-  const t = site.donate;
+  const t = donate;
 
   return (
     <section className="mx-auto max-w-5xl px-6 py-20">
