@@ -23,7 +23,7 @@ export default function Gallery() {
 
   return (
     <section id="gallery" className="mx-auto max-w-5xl px-6 py-20">
-      <p className="font-mono text-sm uppercase tracking-[0.2em] text-clay">{t.eyebrow}</p>
+      <p className="font-mono text-sm uppercase tracking-[0.2em] text-berry">{t.eyebrow}</p>
       <div className="mt-4 flex flex-wrap items-end justify-between gap-4">
         <div>
           <h2 className="max-w-xl font-display text-3xl font-semibold leading-tight tracking-tight sm:text-4xl">
@@ -35,7 +35,7 @@ export default function Gallery() {
           href={t.instagramUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 rounded-full border border-border px-5 py-2.5 text-sm font-medium transition-colors hover:border-terracotta hover:text-clay"
+          className="flex items-center gap-2 rounded-full border border-border px-5 py-2.5 text-sm font-medium transition-colors hover:border-mauve hover:text-berry"
         >
           <InstagramIcon className="h-4 w-4" />
           @{t.instagramHandle}
@@ -61,7 +61,7 @@ export default function Gallery() {
                 href="https://snapwidget.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-medium text-clay underline decoration-honey decoration-2 underline-offset-4 hover:text-terracotta"
+                className="font-medium text-berry underline decoration-orchid decoration-2 underline-offset-4 hover:text-mauve"
               >
                 snapwidget.com
               </a>{" "}
@@ -72,7 +72,7 @@ export default function Gallery() {
               href={t.instagramUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 rounded-full bg-terracotta px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-clay"
+              className="flex items-center gap-2 rounded-full bg-mauve px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-berry"
             >
               <InstagramIcon className="h-4 w-4" />
               @{t.instagramHandle}

@@ -49,7 +49,7 @@ export default function Patterns() {
   return (
     <section className="mx-auto max-w-5xl px-6 py-20">
       <div className="animate-fade-in-up">
-        <p className="font-mono text-sm uppercase tracking-[0.2em] text-clay">{t.eyebrow}</p>
+        <p className="font-mono text-sm uppercase tracking-[0.2em] text-berry">{t.eyebrow}</p>
         <h1 className="mt-4 max-w-2xl font-display text-4xl font-semibold tracking-tight sm:text-5xl">
           {t.heading}
         </h1>
@@ -67,7 +67,7 @@ export default function Patterns() {
               <span
                 className="rounded-full px-3 py-1 font-mono text-xs font-semibold uppercase tracking-wide"
                 style={{
-                  background: pattern.level === "Beginner" ? "var(--color-sage)" : "var(--color-honey)",
+                  background: pattern.level === "Beginner" ? "var(--color-lavender)" : "var(--color-orchid)",
                   color: "#ffffff",
                 }}
               >

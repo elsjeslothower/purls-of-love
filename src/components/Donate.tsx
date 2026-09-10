@@ -23,7 +23,7 @@ export default function Donate() {
   return (
     <section className="mx-auto max-w-5xl px-6 py-20">
       <div className="animate-fade-in-up">
-        <p className="font-mono text-sm uppercase tracking-[0.2em] text-clay">{t.eyebrow}</p>
+        <p className="font-mono text-sm uppercase tracking-[0.2em] text-berry">{t.eyebrow}</p>
         <h1 className="mt-4 max-w-2xl font-display text-4xl font-semibold tracking-tight sm:text-5xl">
           {t.heading}
         </h1>
@@ -32,7 +32,7 @@ export default function Donate() {
           href={t.venmoUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-8 inline-flex items-center gap-2 rounded-full bg-terracotta px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-clay"
+          className="mt-8 inline-flex items-center gap-2 rounded-full bg-mauve px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-berry"
         >
           {t.ctaLabel}
         </a>
@@ -45,12 +45,12 @@ export default function Donate() {
             href={t.venmoUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="group animate-fade-in-up flex flex-col rounded-2xl border border-border bg-surface p-6 transition-colors hover:border-terracotta"
+            className="group animate-fade-in-up flex flex-col rounded-2xl border border-border bg-surface p-6 transition-colors hover:border-mauve"
             style={{ animationDelay: `${i * 60}ms` }}
           >
-            <span className="font-display text-3xl font-semibold text-clay">{option.amount}</span>
+            <span className="font-display text-3xl font-semibold text-berry">{option.amount}</span>
             <p className="mt-2 text-sm leading-relaxed text-foreground-muted">{option.description}</p>
-            <span className="mt-4 text-sm font-medium text-clay transition-colors group-hover:text-terracotta">
+            <span className="mt-4 text-sm font-medium text-berry transition-colors group-hover:text-mauve">
               {t.ctaLabel} →
             </span>
           </a>

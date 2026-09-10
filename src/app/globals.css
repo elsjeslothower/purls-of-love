@@ -1,22 +1,22 @@
 @import "tailwindcss";
 
 :root {
-  --color-cream: #f7efe4;
-  --color-linen: #fffaf3;
-  --color-espresso: #3a2a20;
-  --color-espresso-soft: #6b5648;
-  --color-latte-border: #e8dcc8;
+  --color-blush: #f8f0f3;
+  --color-petal: #fffafc;
+  --color-aubergine: #36213f;
+  --color-aubergine-soft: #6e5a75;
+  --color-blush-border: #e9d4e3;
 
-  --color-terracotta: #c1652f;
-  --color-sage: #6f8360;
-  --color-clay: #a8492f;
-  --color-honey: #c98a2c;
+  --color-mauve: #b2345e;
+  --color-lavender: #7c6a9c;
+  --color-berry: #8a2a4a;
+  --color-orchid: #8f6aa8;
 
-  --background: var(--color-cream);
-  --surface: var(--color-linen);
-  --foreground: var(--color-espresso);
-  --foreground-muted: var(--color-espresso-soft);
-  --border-color: var(--color-latte-border);
+  --background: var(--color-blush);
+  --surface: var(--color-petal);
+  --foreground: var(--color-aubergine);
+  --foreground-muted: var(--color-aubergine-soft);
+  --border-color: var(--color-blush-border);
 }
 
 @theme inline {
@@ -26,10 +26,10 @@
   --color-foreground-muted: var(--foreground-muted);
   --color-border: var(--border-color);
 
-  --color-terracotta: var(--color-terracotta);
-  --color-sage: var(--color-sage);
-  --color-clay: var(--color-clay);
-  --color-honey: var(--color-honey);
+  --color-mauve: var(--color-mauve);
+  --color-lavender: var(--color-lavender);
+  --color-berry: var(--color-berry);
+  --color-orchid: var(--color-orchid);
 
   --font-sans: var(--font-geist-sans);
   --font-display: var(--font-fraunces);
@@ -49,8 +49,8 @@ body {
 }
 
 ::selection {
-  background: var(--color-honey);
-  color: var(--color-espresso);
+  background: var(--color-orchid);
+  color: var(--color-aubergine);
 }
 
 @keyframes fade-in-up {
