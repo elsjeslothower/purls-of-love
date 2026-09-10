@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 const orgName = "Purls of Love";
 
 export const metadata: Metadata = {
-  title: `Patterns — ${orgName}`,
+  title: `Purls of Love`,
   description: "Free, volunteer-tested knit and crochet patterns for Purls of Love donation projects.",
   alternates: {
     canonical: "/patterns",

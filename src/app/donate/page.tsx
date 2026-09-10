@@ -4,7 +4,7 @@ import Donate from "@/components/Donate";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Donate — Purls of Love",
+  title: "Purls of Love",
   description: "Support Purls of Love's volunteer knitters and crocheters with a donation on Venmo.",
   alternates: {
     canonical: "/donate",
