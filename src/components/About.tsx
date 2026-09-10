@@ -26,11 +26,11 @@ export default function About() {
         className="animate-stitch-in pointer-events-none absolute -top-24 right-[-10%] h-[420px] w-[420px] opacity-15"
       >
         <svg viewBox="0 0 200 200" className="h-full w-full">
-          <circle cx="100" cy="100" r="85" fill="none" stroke="var(--color-terracotta)" strokeWidth="1.5" />
+          <circle cx="100" cy="100" r="85" fill="none" stroke="var(--color-mauve)" strokeWidth="1.5" />
           <path
             d="M40 70c30 15 30 45 0 60M70 40c15 30 45 30 60 0M160 70c-30 15-30 45 0 60M70 160c15-30 45-30 60 0"
             fill="none"
-            stroke="var(--color-sage)"
+            stroke="var(--color-lavender)"
             strokeWidth="1.5"
             strokeLinecap="round"
           />
@@ -54,7 +54,7 @@ export default function About() {
         </div>
 
         <div className="animate-fade-in-up sm:col-span-3" style={{ animationDelay: "80ms" }}>
-          <p className="font-mono text-sm uppercase tracking-[0.2em] text-clay">{t.eyebrow}</p>
+          <p className="font-mono text-sm uppercase tracking-[0.2em] text-berry">{t.eyebrow}</p>
           <h1 className="mt-4 font-display text-3xl font-semibold leading-tight tracking-tight sm:text-4xl">
             {t.heading}
           </h1>
@@ -63,7 +63,7 @@ export default function About() {
               {paragraph}
             </p>
           ))}
-          <blockquote className="mt-8 max-w-xl border-l-2 border-terracotta pl-5 font-display text-xl italic leading-relaxed text-foreground">
+          <blockquote className="mt-8 max-w-xl border-l-2 border-mauve pl-5 font-display text-xl italic leading-relaxed text-foreground">
             {t.founderQuote}
           </blockquote>
         </div>

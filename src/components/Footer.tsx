@@ -1,5 +1,5 @@
 const orgName = "Purls of Love";
-const builtWith = "Made with care by volunteers.";
+const builtWith = "Made with care by a volunteer.";
 
 export default function Footer() {
   return (

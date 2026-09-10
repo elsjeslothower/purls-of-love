@@ -21,10 +21,10 @@ export default function NotFound() {
       <Nav />
       <main className="flex flex-1 items-center justify-center px-6 py-24">
         <div className="mx-auto flex max-w-xl flex-col items-center text-center">
-          <div className="animate-stitch-in flex h-40 w-40 items-center justify-center rounded-full border border-border bg-surface text-terracotta">
+          <div className="animate-stitch-in flex h-40 w-40 items-center justify-center rounded-full border border-border bg-surface text-mauve">
             <YarnIcon className="h-20 w-20" />
           </div>
-          <p className="mt-6 font-mono text-sm uppercase tracking-[0.2em] text-clay">Page not found</p>
+          <p className="mt-6 font-mono text-sm uppercase tracking-[0.2em] text-berry">Page not found</p>
           <h1 className="mt-4 font-display text-3xl font-semibold tracking-tight sm:text-4xl">
             This thread ran out.
           </h1>
@@ -34,7 +34,7 @@ export default function NotFound() {
           <button
             type="button"
             onClick={goBack}
-            className="mt-8 rounded-full bg-terracotta px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-clay"
+            className="mt-8 rounded-full bg-mauve px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-berry"
           >
             Go back
           </button>

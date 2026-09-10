@@ -43,7 +43,7 @@ export default function Partners() {
   return (
     <section id="partners" className="border-y border-border bg-surface">
       <div className="mx-auto max-w-5xl px-6 py-20">
-        <p className="font-mono text-sm uppercase tracking-[0.2em] text-clay">{t.eyebrow}</p>
+        <p className="font-mono text-sm uppercase tracking-[0.2em] text-berry">{t.eyebrow}</p>
         <h2 className="mt-4 max-w-xl font-display text-3xl font-semibold leading-tight tracking-tight sm:text-4xl">
           {t.heading}
         </h2>
@@ -56,12 +56,12 @@ export default function Partners() {
               href={partner.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex flex-col rounded-2xl border border-border bg-background p-6 transition-colors hover:border-terracotta"
+              className="group flex flex-col rounded-2xl border border-border bg-background p-6 transition-colors hover:border-mauve"
             >
               <span
                 aria-hidden
                 className="flex h-10 w-10 items-center justify-center rounded-full font-display text-sm font-semibold text-white"
-                style={{ background: "var(--color-sage)" }}
+                style={{ background: "var(--color-lavender)" }}
               >
                 {partner.name.charAt(0)}
               </span>
@@ -69,7 +69,7 @@ export default function Partners() {
                 {partner.name}
               </h3>
               <p className="mt-2 text-sm leading-relaxed text-foreground-muted">{partner.blurb}</p>
-              <span className="mt-4 text-sm font-medium text-clay transition-colors group-hover:text-terracotta">
+              <span className="mt-4 text-sm font-medium text-berry transition-colors group-hover:text-mauve">
                 Visit site →
               </span>
             </a>
