@@ -5,34 +5,24 @@ const partners = {
     "We partner with hospitals, shelters, and community groups to make sure every handmade piece reaches someone who needs it.",
   items: [
     {
-      name: "Riverbend Children's Hospital",
-      blurb: "NICU hats and preemie blankets delivered monthly to new families.",
-      href: "https://example.org",
+      name: "Salem Health Cancer Resource Center",
+      blurb: "Handmade items to provide comfort during difficult treatments. Most useful: hats, scarves, and blankets.",
+      href: "https://www.salemhealth.org/services/cancer",
     },
     {
-      name: "Harborlight Family Shelter",
-      blurb: "Seasonal blanket and scarf drives for families in transitional housing.",
-      href: "https://example.org",
+      name: "The Kindness Club",
+      blurb: "Provides food bags and clothes to at-risk students in Dallas, Oregon.",
+      href: "https://www.thekindnessclubdallasoregon.com/",
     },
     {
-      name: "Maplewood Senior Center",
-      blurb: "Lap blankets and companionship visits for long-term residents.",
-      href: "https://example.org",
+      name: "Purls of Love: Santas for Seniors",
+      blurb: "A Purls of Love seasonal event. Handmade cards and knit or crocheted clothes given to senior citizens who do not have any family with whom to spend the holidays.",
+      href: "https://elsjeslothower.github.io/purls-of-love/#contact",
     },
     {
-      name: "Stitches for Veterans",
-      blurb: "Warm accessories distributed through regional VA outreach events.",
-      href: "https://example.org",
-    },
-    {
-      name: "Willow Creek Women's Shelter",
-      blurb: "Care packages with handmade wearables for residents rebuilding their lives.",
-      href: "https://example.org",
-    },
-    {
-      name: "Foothill Community Fridge Network",
-      blurb: "Weatherproof accessories distributed alongside food resources.",
-      href: "https://example.org",
+      name: "Salem Health NICU",
+      blurb: "NICU hats and preemie blankets delivered to families. If you would like to volunteer for this effort, please reach out before beginning a project, as there are specific requirements for these items.",
+      href: "https://www.salemhealth.org/services/family-birth-center/neonatal-intensive-care-unit",
     },
   ],
 };

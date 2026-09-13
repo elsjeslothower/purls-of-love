@@ -11,8 +11,7 @@ const about = {
   founderRole: "Knitter. Crocheter. Founder.",
   founderQuote:
     "“The goal of Purls of Love is to bring warmth and love to individuals in need of support.”",
-  // TODO: replace with a real photo (e.g. /about/founder.jpg) and update this path.
-  photo: "/about/founder.svg",
+  photo: "/about/founder.jpg",
   photoAlt: "Sara Keck, founder of Purls of Love",
 };
 
