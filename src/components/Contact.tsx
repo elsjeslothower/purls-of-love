@@ -4,7 +4,7 @@ import { useState, type FormEvent } from "react";
 
 const contact = {
   eyebrow: "Contact",
-  heading: "Get in touch.",
+  heading: "Hooked? Get in touch.",
   tagline: "Questions about volunteering, donating yarn, or partnering with us? We'd love to hear from you.",
   email: "purlsoflovebysara@gmail.com",
   presetSubject: "You have a message from the website about {}",
