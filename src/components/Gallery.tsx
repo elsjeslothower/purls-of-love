@@ -11,12 +11,8 @@ const gallery = {
   instagramUrl: "https://www.instagram.com/purlsoflove/",
 };
 
-// SnapWidget (https://snapwidget.com) pulls the live public feed client-side —
-// no API tokens or Meta developer app required. But it does require creating a
-// widget in their dashboard first (sign up free, connect @purlsoflove, click
-// "Get Widget"), which gives you a widget ID unique to that feed. Paste it below.
 // TODO: replace with the real widget ID, e.g. "1234567"
-const SNAPWIDGET_ID = "1130602";
+const SNAPWIDGET_ID = "";//"1130602";
 
 export default function Gallery() {
   const t = gallery;
@@ -56,7 +52,7 @@ export default function Gallery() {
           <div className="flex h-[320px] flex-col items-center justify-center gap-4 px-6 text-center">
             <InstagramIcon className="h-8 w-8 text-foreground-muted" />
             <p className="max-w-sm text-sm leading-relaxed text-foreground-muted">
-              The live feed isn&apos;t connected yet — set up a free widget at{" "}
+              The live feed isn&apos;t connected yet. Set up a free widget at{" "}
               <a
                 href="https://snapwidget.com/"
                 target="_blank"

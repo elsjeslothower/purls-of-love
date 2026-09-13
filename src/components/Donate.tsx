@@ -2,7 +2,7 @@ const donate = {
   eyebrow: "Donate",
   heading: "Provide support.",
   intro:
-    "Purls of Love runs entirely on donated materials and volunteer time. Every dollar goes straight toward yarn, needles, and hooks for our next project — no overhead, no middleman.",
+    "Purls of Love runs entirely on donated materials and volunteer time. Every dollar goes straight toward yarn, needles, and hooks for our next project.",
   // TODO: replace with the real Venmo profile link, e.g. "https://venmo.com/u/YourHandle"
   venmoUrl: "https://venmo.com/u/YOUR_VENMO_HANDLE",
   ctaLabel: "Give on Venmo",
@@ -14,7 +14,7 @@ const donate = {
     { amount: "$50", description: "Materials for a shawl" },
     { amount: "$75", description: "Materials for a full lap blanket" },
   ],
-  helperText: "Every suggested amount below links to the same Venmo profile — give whatever feels right.",
+  helperText: "Every suggested amount above links to the same Venmo profile; give whatever feels right.",
 };
 
 export default function Donate() {
