@@ -16,7 +16,7 @@ const gallery = {
 // widget in their dashboard first (sign up free, connect @purlsoflove, click
 // "Get Widget"), which gives you a widget ID unique to that feed. Paste it below.
 // TODO: replace with the real widget ID, e.g. "1234567"
-const SNAPWIDGET_ID = "";
+const SNAPWIDGET_ID = "1130602";
 
 export default function Gallery() {
   const t = gallery;
