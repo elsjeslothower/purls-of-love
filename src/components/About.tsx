@@ -4,7 +4,7 @@ const about = {
   eyebrow: "About Us",
   heading: "Every stitch is a small act of care.",
   paragraphs: [
-    "Purls of Love started with a single skein of yarn and a simple idea: handmade things carry a warmth that store-bought ones can't. Today we're a community of volunteer knitters and crocheters who make blankets, hats, and blankets for people going through hard seasons — new babies in the NICU, families in shelters, seniors in care homes, and anyone who could use a reminder that someone out there is thinking of them.",
+    "Purls of Love started with a single skein of yarn and a simple idea: handmade things carry a warmth that store-bought ones can't. Today we're a community of volunteer knitters and crocheters who make blankets, hats, and blankets for people going through hard seasons. Purls of Love supports new babies in the NICU, families in shelters, seniors in care homes, and anyone who could use a reminder that someone out there is thinking of them.",
     "We're entirely volunteer-run and donation-funded. Every pattern we share, every partnership we build, and every finished piece we deliver is powered by people who believe that kindness, made by hand, still matters.",
   ],
   founderName: "Sara Keck",
