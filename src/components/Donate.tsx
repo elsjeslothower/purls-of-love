@@ -9,7 +9,7 @@ const donate = {
   suggestedAmounts: [
     { amount: "$5", description: "A new pattern to knit or crochet" },
     { amount: "$15", description: "A skein of soft, washable yarn" },
-    { amount: "$20", description: "2 skeins for a preemie blanket" },
+    { amount: "$20", description: "2 skeins for a hat or scarf" },
     { amount: "$35", description: "A set of needles or hooks for a new volunteer" },
     { amount: "$50", description: "Materials for a shawl" },
     { amount: "$75", description: "Materials for a full lap blanket" },

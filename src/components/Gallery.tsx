@@ -1,4 +1,5 @@
 import { InstagramIcon } from "./icons";
+import SocialLinks from "./SocialLinks";
 
 const orgName = "Purls of Love";
 
@@ -6,11 +7,13 @@ const gallery = {
   eyebrow: "Gallery",
   heading: "Fresh off the needles.",
   paragraph:
-    "We post finished pieces, drop-off days, and behind-the-scenes stitching straight from our Instagram.",
-  instagramHandle: "purlsoflove",
-  instagramUrl: "https://www.instagram.com/purlsoflove/",
+    "For the latest updates, follow us on Instagram and Facebook. We post finished pieces, drop-off days, and behind-the-scenes stitching.",
 };
 
+// SnapWidget (https://snapwidget.com) pulls the live public feed client-side.
+// To turn on the embedded feed: sign up free, connect @purlsoflovebysara, click
+// "Get Widget", and paste the widget ID below. Until then visitors see the
+// fallback card with the follow buttons above.
 // TODO: replace with the real widget ID, e.g. "1234567"
 const SNAPWIDGET_ID = "";//"1130602";
 
@@ -20,23 +23,11 @@ export default function Gallery() {
   return (
     <section id="gallery" className="mx-auto max-w-5xl px-6 py-20">
       <p className="font-mono text-sm uppercase tracking-[0.2em] text-berry">{t.eyebrow}</p>
-      <div className="mt-4 flex flex-wrap items-end justify-between gap-4">
-        <div>
-          <h2 className="max-w-xl font-display text-3xl font-semibold leading-tight tracking-tight sm:text-4xl">
-            {t.heading}
-          </h2>
-          <p className="mt-4 max-w-xl text-lg leading-relaxed text-foreground-muted">{t.paragraph}</p>
-        </div>
-        <a
-          href={t.instagramUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-2 rounded-full border border-border px-5 py-2.5 text-sm font-medium transition-colors hover:border-mauve hover:text-berry"
-        >
-          <InstagramIcon className="h-4 w-4" />
-          @{t.instagramHandle}
-        </a>
-      </div>
+      <h2 className="mt-4 max-w-xl font-display text-3xl font-semibold leading-tight tracking-tight sm:text-4xl">
+        {t.heading}
+      </h2>
+      <p className="mt-4 max-w-xl text-lg leading-relaxed text-foreground-muted">{t.paragraph}</p>
+      <SocialLinks className="mt-6" showEmail={false} />
 
       <div className="mt-10 overflow-hidden rounded-2xl border border-border bg-surface">
         {SNAPWIDGET_ID ? (
@@ -49,30 +40,12 @@ export default function Gallery() {
             loading="lazy"
           />
         ) : (
-          <div className="flex h-[320px] flex-col items-center justify-center gap-4 px-6 text-center">
+          <div className="flex h-[240px] flex-col items-center justify-center gap-4 px-6 text-center">
             <InstagramIcon className="h-8 w-8 text-foreground-muted" />
             <p className="max-w-sm text-sm leading-relaxed text-foreground-muted">
-              The live feed isn&apos;t connected yet. Set up a free widget at{" "}
-              <a
-                href="https://snapwidget.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-medium text-berry underline decoration-orchid decoration-2 underline-offset-4 hover:text-mauve"
-              >
-                snapwidget.com
-              </a>{" "}
-              and paste the widget ID into <code>SNAPWIDGET_ID</code> in{" "}
-              <code>Gallery.tsx</code>. In the meantime, here&apos;s our profile:
+              Our newest photos are on Instagram and Facebook. Follow along to see what we&apos;re
+              making.
             </p>
-            <a
-              href={t.instagramUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 rounded-full bg-mauve px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-berry"
-            >
-              <InstagramIcon className="h-4 w-4" />
-              @{t.instagramHandle}
-            </a>
           </div>
         )}
       </div>

@@ -19,11 +19,6 @@ const partners = {
       blurb: "A Purls of Love seasonal event. Handmade cards and knit or crocheted clothes given to senior citizens who do not have any family with whom to spend the holidays.",
       href: "https://elsjeslothower.github.io/purls-of-love/#contact",
     },
-    {
-      name: "Salem Health NICU",
-      blurb: "NICU hats and preemie blankets delivered to families. If you would like to volunteer for this effort, please reach out before beginning a project, as there are specific requirements for these items.",
-      href: "https://www.salemhealth.org/services/family-birth-center/neonatal-intensive-care-unit",
-    },
   ],
 };
 

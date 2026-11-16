@@ -1,12 +1,14 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
+import { links } from "@/lib/links";
+import SocialLinks from "./SocialLinks";
 
 const contact = {
   eyebrow: "Contact",
   heading: "Hooked? Get in touch.",
   tagline: "Questions about volunteering, donating yarn, or partnering with us? We'd love to hear from you.",
-  email: "purlsoflovebysara@gmail.com",
+  email: links.email,
   presetSubject: "You have a message from the website about {}",
   reasonLabel: "I'm reaching out about",
   reasons: [
@@ -51,6 +53,7 @@ export default function Contact() {
           {t.heading}
         </h2>
         <p className="mt-4 max-w-xl text-lg leading-relaxed text-foreground-muted">{t.tagline}</p>
+        <SocialLinks className="mt-6" />
 
         <form onSubmit={handleSubmit} className="mt-10 grid max-w-2xl gap-5">
           <fieldset className="flex flex-col gap-3">

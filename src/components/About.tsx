@@ -1,18 +1,20 @@
 import { basePath } from "@/lib/basePath";
+import SocialLinks from "./SocialLinks";
 
 const about = {
   eyebrow: "About Us",
   heading: "Every stitch is a small act of care.",
   paragraphs: [
-    "Purls of Love started with a single skein of yarn and a simple idea: handmade things carry a warmth that store-bought ones can't. Today we're a community of volunteer knitters and crocheters who make blankets, hats, and blankets for people going through hard seasons. Purls of Love supports new babies in the NICU, families in shelters, seniors in care homes, and anyone who could use a reminder that someone out there is thinking of them.",
+    "Purls of Love started with a single skein of yarn and a simple idea: handmade things carry a warmth that store-bought ones can't. Today we're a community of volunteer knitters and crocheters who make hats, scarves, and blankets for people going through hard seasons. Purls of Love supports families in shelters, seniors in care homes, and anyone who could use a reminder that someone out there is thinking of them.",
     "We're entirely volunteer-run and donation-funded. Every pattern we share, every partnership we build, and every finished piece we deliver is powered by people who believe that kindness, made by hand, still matters.",
   ],
   founderName: "Sara Louise",
   founderRole: "Knitter. Crocheter. Founder.",
   founderQuote:
     "“The goal of Purls of Love is to bring warmth and love to individuals in need of support.”",
-  photo: "/about/founder.jpg",
-  photoAlt: "Sara Louise, founder of Purls of Love",
+  logo: "/purls-of-love-logo.jpg",
+  logoAlt: "Purls of Love logo: a pink knitted heart pierced by two knitting needles",
+  followLabel: "For the latest updates, follow along or get in touch.",
 };
 
 export default function About() {
@@ -38,12 +40,12 @@ export default function About() {
 
       <div className="relative mx-auto grid max-w-5xl gap-12 px-6 py-20 sm:grid-cols-5 sm:items-center">
         <div className="animate-fade-in-up sm:col-span-2">
-          <div className="overflow-hidden rounded-3xl border border-border bg-surface shadow-sm">
+          <div className="overflow-hidden rounded-3xl border border-border bg-surface p-6 shadow-sm">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src={`${basePath}${t.photo}`}
-              alt={t.photoAlt}
-              className="aspect-[4/5] w-full object-cover"
+              src={`${basePath}${t.logo}`}
+              alt={t.logoAlt}
+              className="w-full mix-blend-multiply"
             />
           </div>
           <p className="mt-4 text-sm font-medium text-foreground">{t.founderName}</p>
@@ -65,6 +67,10 @@ export default function About() {
           <blockquote className="mt-8 max-w-xl border-l-2 border-mauve pl-5 font-display text-xl italic leading-relaxed text-foreground">
             {t.founderQuote}
           </blockquote>
+          <p className="mt-8 font-mono text-xs uppercase tracking-widest text-foreground-muted">
+            {t.followLabel}
+          </p>
+          <SocialLinks className="mt-3" />
         </div>
       </div>
     </section>

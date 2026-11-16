@@ -24,8 +24,15 @@ export default function Nav() {
   return (
     <header className="animate-fade-in-down sticky top-0 z-50 border-b border-border/80 bg-background/90 backdrop-blur">
       <nav className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
-        <a href={`${basePath}/`} className="font-display text-lg font-semibold tracking-tight text-berry">
-          {orgName}
+        <a href={`${basePath}/`} className="flex items-center gap-3">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={`${basePath}/purls-of-love-logo.jpg`}
+            alt=""
+            aria-hidden
+            className="h-12 w-auto mix-blend-multiply"
+          />
+          <span className="font-display text-lg font-semibold tracking-tight text-berry">{orgName}</span>
         </a>
         <div className="flex items-center gap-2 sm:gap-6">
           <ul className="hidden gap-6 text-sm text-foreground-muted sm:flex">

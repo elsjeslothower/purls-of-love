@@ -13,11 +13,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it.
 
 A few placeholders need real content — search for `TODO` across the repo, or check these directly:
 
-- `src/content/site.ts` — founder photo path, all copy (Instagram handle `@purlsoflove` is already wired up)
-- `src/components/Contact.tsx` — `WEB3FORMS_ACCESS_KEY` (get one free at [web3forms.com](https://web3forms.com))
-- `public/about/founder.svg` — replace with a real photo (e.g. `public/about/founder.jpg`) and update the path in `site.ts`
-- `src/content/site.ts` `partners.items` — real partner organizations
-- `src/content/site.ts` `patterns.items` — real pattern list
+- `src/lib/links.ts` — Instagram, Facebook, and email shared by About, Gallery, Contact, and the footer
+- `src/components/Gallery.tsx` — `SNAPWIDGET_ID` for the embedded Instagram feed
+- `src/components/Donate.tsx` — the real Venmo link
+- Content lives in each component (`About.tsx`, `Partners.tsx`, `Patterns.tsx`, ...)
 
 ## Deploy
 

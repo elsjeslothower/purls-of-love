@@ -3,8 +3,6 @@ import Nav from "@/components/Nav";
 import Patterns from "@/components/Patterns";
 import Footer from "@/components/Footer";
 
-const orgName = "Purls of Love";
-
 export const metadata: Metadata = {
   title: `Purls of Love`,
   description: "Free, volunteer-tested knit and crochet patterns for Purls of Love donation projects.",
