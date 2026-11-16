@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   icons: {
-    icon: [{ url: `${basePath}/favicon.svg`, type: "image/svg+xml" }],
+    icon: [{ url: `${basePath}/favicon.png`, type: "image/png", sizes: "64x64" }],
   },
 };
 

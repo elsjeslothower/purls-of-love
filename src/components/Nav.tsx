@@ -27,7 +27,7 @@ export default function Nav() {
         <a href={`${basePath}/`} className="flex items-center gap-3">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src={`${basePath}/purls-of-love-logo.jpg`}
+            src={`${basePath}/heart-icon.svg`}
             alt=""
             aria-hidden
             className="h-12 w-auto mix-blend-multiply"

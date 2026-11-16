@@ -9,7 +9,6 @@ const about = {
     "We're entirely volunteer-run and donation-funded. Every pattern we share, every partnership we build, and every finished piece we deliver is powered by people who believe that kindness, made by hand, still matters.",
   ],
   founderName: "Sara Louise",
-  founderRole: "Knitter. Crocheter. Founder.",
   founderQuote:
     "“The goal of Purls of Love is to bring warmth and love to individuals in need of support.”",
   logo: "/purls-of-love-logo.jpg",
@@ -48,10 +47,6 @@ export default function About() {
               className="w-full mix-blend-multiply"
             />
           </div>
-          <p className="mt-4 text-sm font-medium text-foreground">{t.founderName}</p>
-          <p className="font-mono text-xs uppercase tracking-widest text-foreground-muted">
-            {t.founderRole}
-          </p>
         </div>
 
         <div className="animate-fade-in-up sm:col-span-3" style={{ animationDelay: "80ms" }}>
@@ -66,6 +61,9 @@ export default function About() {
           ))}
           <blockquote className="mt-8 max-w-xl border-l-2 border-mauve pl-5 font-display text-xl italic leading-relaxed text-foreground">
             {t.founderQuote}
+            <footer className="mt-3 font-sans text-sm font-medium not-italic text-foreground-muted">
+              {t.founderName}
+            </footer>
           </blockquote>
           <p className="mt-8 font-mono text-xs uppercase tracking-widest text-foreground-muted">
             {t.followLabel}
